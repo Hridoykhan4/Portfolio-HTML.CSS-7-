@@ -197,6 +197,36 @@ justify-content: space-between;
     display: flex;
     justify-content: space-around;
 }
+
+
+/* Travel part */
+.travel-main{
+    margin-top: 30px;
+}
+
+.travel-child{
+    width: 300px;
+}
+
+.travel-child img{
+    width: 100%;
+}
+
+.travel-main{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+
+}
+
+footer{
+    background-color: rgb(185, 155, 160);
+    padding: 60px;
+    color: white;
+    text-align: center;
+}
+
 @media screen and (max-width:576px) {
    .header-section p{
     display: block;
@@ -223,7 +253,7 @@ justify-content: space-between;
   }.perfect-fit{
     flex-direction: column;
   }
-  .casual-main{
+  .casual-main,.travel-main{
     flex-direction: column;
     width: 100%;
     justify-content: center;
