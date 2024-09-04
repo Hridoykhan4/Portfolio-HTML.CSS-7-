@@ -11,3 +11,138 @@
 body{
     font-family: 'Times New Roman', Times, serif;
 }
+
+nav img{
+    width: 60%;
+    height: 60%;
+}
+
+.container{
+     max-width: 1440px;
+     width: 90%;
+     margin: 0 auto;
+}
+
+/* header Section Start */
+.header-section{
+    display: flex;
+    background-color: rgb(231, 213, 228);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header-section nav{
+    flex-shrink: 0; 
+}
+
+.header-section ul{
+    display: flex;
+    gap: 20px;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+
+}
+
+.banner-section h2{
+    font-family: Bebas Neue;
+font-size: 3rem;
+font-weight: 700;
+line-height: 5rem;
+letter-spacing: 0%;
+text-align: left;
+color: #363958;
+}
+
+.banner-section p{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.fa-shopping-cart{
+    margin-right: 10px;
+}
+
+.banner-content button{
+    border: 0;
+    padding: 10px;
+    background-color: rgb(81, 81, 172);
+    color: white;
+    margin-right: px;
+}
+
+.header-section li a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.header-section p{
+    display: none;
+}
+
+/* Banner Section */
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-content p{
+    width: 70%;
+}
+
+.banner-img{
+    width: 300px;
+    display: block;
+    margin: 40px auto;
+    background-image: url('assets/logo/Lion2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    filter: brightness(100%);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+
+.banner-section{
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media screen and (max-width:576px) {
+   .header-section p{
+    display: block;
+    }.header-section ul{
+    display: none;
+   }
+   .header-section{
+    flex-direction: column;
+    gap: 20px;
+   }
+   nav img{
+    width: 100%;
+   }.banner-section{
+    flex-direction: column;
+    gap: 20px;
+   }.banner-img img{
+    width: 100%;
+   }
+   .banner-content h2,p{
+    text-align: center;
+   }
+  .banner-content{
+    align-items: center;
+  }
+}
