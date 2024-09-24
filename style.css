@@ -29,24 +29,31 @@ header{
 }
 
 header .logo{
-    margin-left: 6rem;
-    padding: 1.2rem;
+    margin-left: 2rem;
 }
 
-header .nav{
-    position: absolute;
-    top: 0;
-    right: 0;
+#check{
+    display: none;
 }
+
+.checkbtn{
+    display: none;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 5rem;
+    margin-right: 2rem;
+}
+
 
 
 header .nav ul{
     display: flex;
-    margin-right: 4rem;
+    justify-content: space-between;
+    margin-right: 1rem;
 }
 
 header .nav ul li{
-    padding: 1.2rem;
+    padding:  1.2rem;
 }
 
 header .nav ul li a{
@@ -77,18 +84,18 @@ header .nav ul li a:hover{
 }
 
 .half-1{
-    margin-left: 14rem;
+    margin-left: 6rem;
     margin-bottom: 11rem;
     margin-top: 3rem;
 }
 
 .half-2{
-    padding-right: 7rem;
+    padding-right: 4rem;
 }
 
 .half-2 img{
-    max-width: 100%;
-    height: 30rem;
+    width: 100%;
+    height: auto;
 }
 
 .half-1 h3{
@@ -230,6 +237,7 @@ header .nav ul li a:hover{
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 4rem 0;
 }
 
@@ -237,17 +245,13 @@ header .nav ul li a:hover{
     margin: 0 7rem;
 }
 
-.section4 h1,p{
-    text-align: center;
-    margin-top: 0.5rem;
-    color: white;
-}
 
 .section4 h1{
     font-size: 3rem;
     font-weight: bolder;
    background-color: black;
    padding: 0.6rem;
+   color: white;
    border-radius: 0.7rem;
 }
 
@@ -277,6 +281,124 @@ header .nav ul li a:hover{
     gap: 1rem; 
     margin: 4rem auto;
     justify-items: center; 
+    align-items: center;
     justify-content: center; 
 }
 
+.imgg img{
+    width: 100%;
+}
+
+/* section6 start */
+.section5 .card{
+    margin: 4rem auto;
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5 .card-1{
+    width: 300px;
+    height: 550px;
+    background-color: rgb(249, 249, 255);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section5 .card-1 h1{
+    font-size: 3rem;
+    padding-top: 0.5rem;
+    font-weight: bolder;
+}
+
+.section5 .card-1 input{
+    outline: none;
+    background-color: #8293ff;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.4rem 3.4rem;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.section5 .card div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section5 .card-1:hover{
+    background-color: #8293ff;
+    color: white;
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+footer {
+    background-color: rgb(4, 9, 30);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+footer .foot {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+footer .foot-1 {
+    flex: 1;
+    max-width: 250px;
+}
+
+footer .foot-1 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .foot-1 p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+}
+
+footer .foot .foot-1 input {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: calc(100% - 20px);
+}
+
+footer .foot .foot-1 button {
+    font-size: 1.1rem;
+    color: white;
+    background-color: #8293ff;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer .foot .foot-1 button:hover {
+    background-color: #5a6fdc;
+}
+
+footer .foot-1 i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+footer .foot-1 i:hover {
+    color: #8293ff;
+}

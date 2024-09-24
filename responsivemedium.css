@@ -1,0 +1,136 @@
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        width: 100%;
+        height: auto;
+     }
+     .checkbtn{
+         display: block;
+     }header .nav ul{
+         left: -200%;
+         position: fixed;
+         width: 100%;
+         top: 4rem;
+         height: 100vh;
+         z-index: 1;
+         transition: all .1s;
+     }header .logo{
+         margin-left: 1rem;
+     }
+    
+     #check:checked ~ ul{
+         left: 0;
+         flex-direction: column;
+         background-color: rgb(226, 238, 240);
+     }
+     header .nav ul li{
+        margin-top: 1rem;
+        margin-left: 1rem;
+     }header .nav ul li a{
+         font-size: 1rem;
+     }.section1{
+        flex-direction: column;
+        height: 60rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        margin-top: 4rem;
+     }
+     .half-1,.half-2{
+        width: 100%;
+     }.half-1{
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }.half-2{
+        padding-right:0rem;
+    }.half-2 img{
+        width: 60%;
+        height: auto;
+    }
+    .half-1 h1{
+        font-size: 2rem;
+    }
+    
+    .half-1 p{
+        color: rgba(78,78,78,0.7);
+        text-align: justify;
+    }
+    
+    .half-1 input{
+        padding: 0.4rem 0.4rem;
+        background: linear-gradient(to right, #159957, #155799);
+        font-size: 1rem;
+        color: white;
+        border: 1px solid #8393ff;
+        outline: none;
+    }
+
+
+
+    
+.section2{
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 60rem;
+    padding: 2rem;
+ }
+
+.section2 div{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.section2 img{
+    width: 60%;
+}
+
+.section2 .img2{
+    padding-left: 0rem;
+}
+
+.service{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.section4{
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    padding:1rem 0;
+}
+
+.section5 .text3 h1{
+    font-size: 2.1rem;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.8);
+}
+.imgg {
+    width: 100%;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 1rem; 
+    margin: 0rem auto;
+    justify-items: center; 
+    justify-content: center; 
+}
+
+.section5 .card{
+    margin: 4rem auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+}
