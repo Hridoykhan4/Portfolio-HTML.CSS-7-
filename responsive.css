@@ -13,16 +13,25 @@ header{
      top: 4rem;
      height: 100vh;
      z-index: 1;
-     transition: all .1s;
+     transition: 2s;
+     margin: 0;
  }header .logo{
      margin-left: 1rem;
  }
 
  #check:checked ~ ul{
      left: 0;
+     transition: 0.8s;
      flex-direction: column;
      background-color: rgb(226, 238, 240);
  }
+
+ header .nav ul li{
+    padding:  0.2rem;
+}
+
+
+
  header .nav ul li{
     margin-top: 1rem;
     margin-left: 1rem;
