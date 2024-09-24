@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,259 +9,274 @@
     list-style-type: none;
     text-decoration: none;
     outline: 0;
+    text-decoration: none;
     font-weight: 400;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
 }
 
-nav img{
-    width: 60%;
-    height: 60%;
-}
-
-.container{
-     max-width: 1440px;
-     width: 90%;
-     margin: 0 auto;
-}
-
-/* header Section Start */
-.header-section{
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
     display: flex;
-    background-color: rgb(231, 213, 228);
-    margin-top: 20px;
+    height: 4rem;
     align-items: center;
+    background-color: #fff;
     justify-content: space-between;
-
-}
-.header-section nav{
-    flex-shrink: 0; 
 }
 
-.header-section ul{
+header .logo{
+    margin-left: 6rem;
+    padding: 1.2rem;
+}
+
+header .nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+header .nav ul{
     display: flex;
-    gap: 20px;
+    margin-right: 4rem;
 }
 
-.banner-content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: start;
-
+header .nav ul li{
+    padding: 1.2rem;
 }
 
-.banner-section h2{
-    font-family: Bebas Neue;
-font-size: 3rem;
-font-weight: 700;
-line-height: 5rem;
-letter-spacing: 0%;
-text-align: left;
-color: #363958;
+header .nav ul li a{
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-.banner-section p{
-    font-size: 1.1rem;
-    font-weight: lighter;
-    opacity: 0.8;
+
+header .nav ul li a:hover{
+    color: #7f97ff;
 }
 
-.fa-shopping-cart{
-    margin-right: 10px;
-}
-
-.banner-content button{
-    border: 0;
-    padding: 10px;
-    background-color: rgb(81, 81, 172);
-    color: white;
-    margin-right: px;
-}
-
-.header-section li a{
-    color: black;
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-
-.header-section p{
-    display: none;
-}
-
-/* Banner Section */
-.banner-img img{
+.section1{
+    background-color: #f9f9ff;
     width: 100%;
-    height: 100%;
-}
-
-.banner-content p{
-    width: 70%;
-}
-
-.banner-img{
-    width: 300px;
-    display: block;
-    margin: 40px auto;
-    background-image: url('assets/logo/Lion2.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    filter: brightness(100%);
-    backdrop-filter: blur(10px);
-    background-color: rgba(0,0,0,0.6);
-}
-
-
-
-.banner-section{
     display: flex;
-    margin: 50px auto;
-    justify-content: center;
+    height: 47rem;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
-section{
-    margin: 60px auto;
+.half-1,.half-2{
+    width: 48%;
 }
 
-
-/* Perfect Fit starts */
-.perfect-fit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.half-1{
+    margin-left: 14rem;
+    margin-bottom: 11rem;
+    margin-top: 3rem;
 }
 
-
-.perfect-sect{
-display: flex;
+.half-2{
+    padding-right: 7rem;
 }
 
-.perfect-sect img{
-    width: 4rem;
+.half-2 img{
+    max-width: 100%;
+    height: 30rem;
 }
 
-.perfect-image{
-    width: 300px;
-}
-.perfect-image img{
-    width: 100%;
+.half-1 h3{
+    font-weight: normal;
 }
 
-
-.perfect-sect-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.half-1 h1{
+    font-size: 3.3rem;
 }
 
-/* Casual Item Start */
-.casual-item{
-    margin-top: 30px;
-    width: 300px;
-    box-shadow: 1px 2px 1px;
-    padding: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.casual-item img{
-    width: 100%;
-}
-
-.end{
-    color: rgb(118, 194, 126);
-font-family: Roboto;
-font-size: 36px;
-font-weight: 900;
-line-height: 42px;
-letter-spacing: 0%;
-text-align: left;
-display: flex;
-justify-content: space-between;
-}
-
-.casual-item h3{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.end p{
+.half-1 p{
+    color: rgba(78,78,78,0.7);
     text-align: justify;
-    justify-content: center;
 }
 
-
-.casual-main{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/* Travel part */
-.travel-main{
-    margin-top: 30px;
-}
-
-.travel-child{
-    width: 300px;
-}
-
-.travel-child img{
-    width: 100%;
-}
-
-.travel-main{
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    align-items: center;
-
-}
-
-footer{
-    background-color: rgb(185, 155, 160);
-    padding: 60px;
+.half-1 input{
+    padding: 0.5rem 0.8rem;
+    background: linear-gradient(to right, #159957, #155799);
+    font-size: 1rem;
     color: white;
-    text-align: center;
+    border: 1px solid #8393ff;
+    outline: none;
 }
 
-@media screen and (max-width:576px) {
-   .header-section p{
-    display: block;
-    }.header-section ul{
-    display: none;
-   }
-   .header-section{
-    flex-direction: column;
-    gap: 20px;
-   }
-   nav img{
+
+/* about me starts */
+.section2{
     width: 100%;
-   }.banner-section{
-    flex-direction: column;
-    gap: 20px;
-   }.banner-img img{
-    width: 100%;
-   }
-   .banner-content h2,p{
-    text-align: center;
-   }
-  .banner-content{
-    align-items: center;
-  }.perfect-fit{
-    flex-direction: column;
-  }
-  .casual-main,.travel-main{
-    flex-direction: column;
-    width: 100%;
+    height: 36rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-  }
+    background-color: #F0F0FF;
+    margin: 3rem 0;
 }
+
+.section2 div{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.section2 img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section2 .img2{
+    padding-left: 10rem;
+}
+
+.text2 h3{
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem
+}
+
+.text2 h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.text2 p{
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+}
+
+
+.text2 input{
+    padding: 0.5rem 0.8rem;
+    background: linear-gradient(to right, #159957, #155799);
+    font-size: 1rem;
+    color: white;
+    border: 1px solid #8393ff;
+    outline: none;
+}
+
+/* section3 start */
+.section3{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom:4rem;
+}
+
+.section3 p{
+    color: black;
+}
+
+.firsttext h1{
+    font-size: 2.5rem;
+    line-height: 1rem;
+}
+
+.firsttext p{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.service{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.service i{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.service h1{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.service p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.service div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+}
+/* Section3 end */
+
+/* section4 starts */
+.section4{
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.section4 div{
+    margin: 0 7rem;
+}
+
+.section4 h1,p{
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.section4 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+   background-color: black;
+   padding: 0.6rem;
+   border-radius: 0.7rem;
+}
+
+/* Portfolio start */
+.section5{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.section5 .text3{
+    text-align: center;
+}
+.section5 .text3 h1{
+    font-size: 2.9rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.section5 .text3 p{
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 0.3rem;
+}
+
+.imgg {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+    margin: 4rem auto;
+    justify-items: center; 
+    justify-content: center; 
+}
+
