@@ -7,7 +7,7 @@ header{
  .checkbtn{
      display: block;
  }header .nav ul{
-     left: -200%;
+     left: -300%;
      position: fixed;
      width: 100%;
      top: 4rem;
